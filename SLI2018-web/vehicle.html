@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SLI2018</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Home</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="project.html">Project</a></li>
+								<li><a href="vehicle.html">Vehicle</a></li>
+								<li><a href="payload.html">Payload</a></li>
+								<li><a href="#">Documents</a></li>
+								<li><a href="#">Team</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Vehicle</h2>
+								<p>We will be conscientiously crafting a vehicle optimised for carrying our payload and conducting our project.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">The Design</h3>
+									<div class="12u$"><span class="image fit"><img src="images/vehicle1.png" alt=""/></span></div>
+									<p>The vehicle will be constructed out of fiberglass and metal components with extra epoxy and strength at load-bearing joints. Our rocket has a mass of 15.1 lbs, which includes a 5.7 lb Aerotech K1130X-14 motor. This estimate of mass comes from the OpenRocket application where our rocket is being designed.</p>
+									<p>Below are several calculated trajectories illustrated by OpenRocket: </p>
+
+									<!--////////SLIDER/////////-->
+									<div class="bss-slides demo1" tabindex="1" autofocus="autofocus">
+										<figure>
+											<img src="images/profiles/thrust_curve.png" width="100%" /><figcaption>Thrust Curve</figcaption> 
+										</figure>
+										<figure>
+											<img src="images/profiles/altitude_profile.png" width="100%" /><figcaption>Altitude Profile</figcaption> 
+										</figure>
+										<figure>
+											<img src="images/profiles/acceleration_profile.png" width="100%" /><figcaption>Acceleration Profile</figcaption> 
+										</figure>
+										<figure>
+											<img src="images/profiles/velocity_profile.png" width="100%" /><figcaption>Velocity Profile</figcaption> 
+										</figure>
+									</div> <!-- // bss-slides -->
+
+									<style>
+										.bss-slides{
+										position: relative;
+										display: block;  
+										margin-bottom: 2em;
+										}
+										.bss-slides:focus{
+										outline: 0;
+										}
+										.bss-slides figure{
+										position: absolute;
+										top: 0;
+										width: 100%;
+										}
+										.bss-slides figure:first-child{
+										position: relative;
+										}
+										.bss-slides figure img{
+										opacity: 0;
+										-webkit-transition: opacity 1.2s;
+										transition: opacity 1.2s;
+										position: relative;
+										/*-webkit-backface-visibility: hidden;
+										backface-visibility: hidden;
+										*/
+										}
+										.bss-slides .bss-show {
+										z-index: 3;
+										}
+										.bss-slides .bss-show img{
+										opacity: 1;
+										/* -webkit-backface-visibility: hidden;
+										backface-visibility: hidden;*/
+										}
+
+										.bss-slides figcaption{
+										position: absolute;
+										font-family: sans-serif;
+										font-size: 1.25em;
+										top: .75em;
+										right: .35em;
+										padding: .25em;
+										color: #fff;
+										background: #000;
+										background: rgba(0,0,0, .6);
+										border-radius: 2px;
+										opacity: 0;
+										-webkit-transition: opacity 1.2s;
+										transition: opacity 1.2s;
+										}
+										.bss-slides .bss-show figcaption{
+										z-index: 2;
+										opacity: 1;
+										}
+										.bss-slides figcaption a{
+										color: #fff;    
+										}
+										.bss-next, .bss-prev{
+										color: #fff;
+										position: absolute;
+										background: #000;
+										background: rgba(0,0,0, .6);
+										top: 50%;
+										z-index: 4;
+										font-size: 2em;
+										margin-top: -1.2em;
+										opacity: .5;
+										-webkit-user-select: none;
+										-moz-user-select: none;
+										-ms-user-select: none;
+										user-select: none;
+										}
+										.bss-next:hover, .bss-prev:hover{
+										cursor: pointer;
+										opacity: 1;
+										}
+										.bss-next{
+										right: 0;
+										padding: 10px 5px 15px 10px;
+										border-top-left-radius: 3px;
+										border-bottom-left-radius: 3px;
+										}
+										.bss-prev{
+										left: 0;
+										padding: 10px 10px 15px 5px;
+										border-top-right-radius: 3px;
+										border-bottom-right-radius: 3px;
+										}
+										.bss-fullscreen{
+										display: block;
+										width: 24px;
+										height: 24px;    
+										background: rgba(0,0,0,.3) url(https://leemark.github.io/better-simple-slideshow/img/arrows-alt_ffffff_64.png); 
+										-webkit-background-size: contain; 
+										background-size: contain;
+										position: absolute;
+										top: 5px;
+										left: 5px;   
+										cursor: pointer;    
+										opacity: .3;
+										} 
+										.bss-fullscreen:hover{
+										opacity: .8;   
+										}
+										:-webkit-full-screen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											-webkit-background-size: contain;
+											background-size: contain;
+										}
+										:-moz-full-screen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											background-size: contain;
+										}
+										:-ms-fullscreen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											background-size: contain;
+										}
+										:full-screen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											-webkit-background-size: contain;
+											background-size: contain;
+										}
+										:-webkit-full-screen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											-webkit-background-size: contain;
+											background-size: contain;
+										}
+										:-moz-full-screen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											background-size: contain;
+										}
+										:-ms-fullscreen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											background-size: contain;
+										}
+										:fullscreen .bss-fullscreen{
+											background: rgba(0,0,0,.4) url(https://leemark.github.io/better-simple-slideshow/img/compress_ffffff_64.png);
+											-webkit-background-size: contain;
+											background-size: contain;
+										}
+
+									</style>
+
+									<script>
+										var makeBSS = function (el, options) {
+										var $slideshows = document.querySelectorAll(el), // a collection of all of the slideshow
+											$slideshow = {},
+											Slideshow = {
+												init: function (el, options) {
+													this.counter = 0; // to keep track of current slide
+													this.el = el; // current slideshow container    
+													this.$items = el.querySelectorAll('figure'); // a collection of all of the slides, caching for performance
+													this.numItems = this.$items.length; // total number of slides
+													options = options || {}; // if options object not passed in, then set to empty object 
+													options.auto = options.auto || false; // if options.auto object not passed in, then set to false
+													this.opts = {
+														auto: (typeof options.auto === "undefined") ? false : options.auto,
+														speed: (typeof options.auto.speed === "undefined") ? 1500 : options.auto.speed,
+														pauseOnHover: (typeof options.auto.pauseOnHover === "undefined") ? false : options.auto.pauseOnHover,
+														fullScreen: (typeof options.fullScreen === "undefined") ? false : options.fullScreen,
+														swipe: (typeof options.swipe === "undefined") ? false : options.swipe
+													};
+													
+													this.$items[0].classList.add('bss-show'); // add show class to first figure 
+													this.injectControls(el);
+													this.addEventListeners(el);
+													if (this.opts.auto) {
+														this.autoCycle(this.el, this.opts.speed, this.opts.pauseOnHover);
+													}
+													if (this.opts.fullScreen) {
+														this.addFullScreen(this.el);
+													}
+													if (this.opts.swipe) {
+														this.addSwipe(this.el);
+													}
+												},
+												showCurrent: function (i) {
+													// increment or decrement this.counter depending on whether i === 1 or i === -1
+													if (i > 0) {
+														this.counter = (this.counter + 1 === this.numItems) ? 0 : this.counter + 1;
+													} else {
+														this.counter = (this.counter - 1 < 0) ? this.numItems - 1 : this.counter - 1;
+													}
+
+													// remove .show from whichever element currently has it 
+													// http://stackoverflow.com/a/16053538/2006057
+													[].forEach.call(this.$items, function (el) {
+														el.classList.remove('bss-show');
+													});
+										
+													// add .show to the one item that's supposed to have it
+													this.$items[this.counter].classList.add('bss-show');
+												},
+												injectControls: function (el) {
+												// build and inject prev/next controls
+													// first create all the new elements
+													var spanPrev = document.createElement("span"),
+														spanNext = document.createElement("span"),
+														docFrag = document.createDocumentFragment();
+											
+													// add classes
+													spanPrev.classList.add('bss-prev');
+													spanNext.classList.add('bss-next');
+											
+													// add contents
+													spanPrev.innerHTML = '&laquo;';
+													spanNext.innerHTML = '&raquo;';
+													
+													// append elements to fragment, then append fragment to DOM
+													docFrag.appendChild(spanPrev);
+													docFrag.appendChild(spanNext);
+													el.appendChild(docFrag);
+												},
+												addEventListeners: function (el) {
+													var that = this;
+													el.querySelector('.bss-next').addEventListener('click', function () {
+														that.showCurrent(1); // increment & show
+													}, false);
+												
+													el.querySelector('.bss-prev').addEventListener('click', function () {
+														that.showCurrent(-1); // decrement & show
+													}, false);
+													
+													el.onkeydown = function (e) {
+														e = e || window.event;
+														if (e.keyCode === 37) {
+															that.showCurrent(-1); // decrement & show
+														} else if (e.keyCode === 39) {
+															that.showCurrent(1); // increment & show
+														}
+													};
+												},
+												autoCycle: function (el, speed, pauseOnHover) {
+													var that = this,
+														interval = window.setInterval(function () {
+															that.showCurrent(1); // increment & show
+														}, speed);
+													
+													if (pauseOnHover) {
+														el.addEventListener('mouseover', function () {
+															interval = clearInterval(interval);
+														}, false);
+														el.addEventListener('mouseout', function () {
+															interval = window.setInterval(function () {
+																that.showCurrent(1); // increment & show
+															}, speed);
+														}, false);
+													} // end pauseonhover
+													
+												},
+												addFullScreen: function(el){
+													var that = this,
+													fsControl = document.createElement("span");
+													
+													fsControl.classList.add('bss-fullscreen');
+													el.appendChild(fsControl);
+													el.querySelector('.bss-fullscreen').addEventListener('click', function () {
+														that.toggleFullScreen(el);
+													}, false);
+												},
+												addSwipe: function(el){
+													var that = this,
+														ht = new Hammer(el);
+													ht.on('swiperight', function(e) {
+														that.showCurrent(-1); // decrement & show
+													});
+													ht.on('swipeleft', function(e) {
+														that.showCurrent(1); // increment & show
+													});
+												},
+												toggleFullScreen: function(el){
+													// https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Using_full_screen_mode
+													if (!document.fullscreenElement &&    // alternative standard method
+														!document.mozFullScreenElement && !document.webkitFullscreenElement &&   
+														!document.msFullscreenElement ) {  // current working methods
+														if (document.documentElement.requestFullscreen) {
+															el.requestFullscreen();
+														} else if (document.documentElement.msRequestFullscreen) {
+															el.msRequestFullscreen();
+														} else if (document.documentElement.mozRequestFullScreen) {
+															el.mozRequestFullScreen();
+														} else if (document.documentElement.webkitRequestFullscreen) {
+															el.webkitRequestFullscreen(el.ALLOW_KEYBOARD_INPUT);
+														}
+													} else {
+														if (document.exitFullscreen) {
+															document.exitFullscreen();
+														} else if (document.msExitFullscreen) {
+															document.msExitFullscreen();
+														} else if (document.mozCancelFullScreen) {
+															document.mozCancelFullScreen();
+														} else if (document.webkitExitFullscreen) {
+															document.webkitExitFullscreen();
+														}
+													}
+												} // end toggleFullScreen
+												
+											}; // end Slideshow object 
+											
+										// make instances of Slideshow as needed
+										[].forEach.call($slideshows, function (el) {
+											$slideshow = Object.create(Slideshow);
+											$slideshow.init(el, options);
+										});
+									};
+									var opts = {
+										auto : {
+											speed : 5000, 
+											pauseOnHover : true
+										},
+										fullScreen : true, 
+										swipe : true
+									};
+									makeBSS('.demo1', opts);
+									</script>
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+						<div class="inner">
+							<h2 class="major">Contact us</h2>
+							<p>Feel free, at any time, to contact us with any questions or concerns regarding our NASA Student Launch Initiative project.</p>
+							<form method="post" action="form.php">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									Madison West Rocketry<br />
+									Madison, WI 53726
+								</li>
+								<li class="fa-facebook"><a href="https://www.facebook.com/madison.west.rocketry/?hc_ref=ARQ9kBHO-fCoQ8c37cH3zInuod5IkcD6fDEi3Q0RMqFbkpqL4aDTRJMtVso4WFNcUog&fref=nf">Facebook.com: Madison West Rocketry</a></li>
+								<li class="fa-github"><a href="https://github.com/94KeyboardsSmashed/SLI2017_Hurgus_Madison">Github: Madison West Rocketry</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Madison West Rocketry. All rights reserved.</li><li>Design: Benton Likos &amp; Hyun-Seok Chang</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
