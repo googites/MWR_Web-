@@ -16,3 +16,10 @@ Madison West Rocketry's Team Hurgus is a group of students who are studying the 
 ## Access at:
 
 http://liquid.westrocketry.com/index.html
+
+## License
+This software and all associated files are under the MIT license.
+
+## Authors
+- Benton Likos
+- Hyun-seok Chang
