@@ -8,7 +8,7 @@
 
 <h4 align="center">A minimal website created to provide information about Maidon West Rocketry's 2018 <a href="https://www.nasa.gov/audience/forstudents/studentlaunch/home/index.html" target="_blank">SLI project</a>.</h4>
 
-![screenshot](https://i.imgur.com/WNcDXrq.gifv)
+![screenshot](https://i.imgur.com/WNcDXrq.gif)
 
 ## Madison West Rocketry (MWR)
 
