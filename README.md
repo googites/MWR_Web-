@@ -20,6 +20,11 @@ http://liquid.westrocketry.com/index.html
 ## License
 This software and all associated files are under the MIT license.
 
+## Other MWR repos
+- [MWR_Takeoff_Software](https://github.com/94KeyboardsSmashed/MWR_Takeoff_Software)
+- [SLI2017_Hurgus_Madison](https://github.com/94KeyboardsSmashed/SLI2017_Hurgus_Madison)
+- [MWR_PlasmaThruster](https://github.com/googites/MWR_PlasmaThuster)
+
 ## Authors
 - Benton Likos
 - Hyun-seok Chang
